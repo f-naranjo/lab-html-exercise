@@ -11,9 +11,55 @@ header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+  /*border-bottom: 1px solid lightgray;*/
 }
 
+#search-form{
+  display:flex;
+  justify-content: left;
+  backgrund-color:red;
+  height:45px;
+  width:80%;
+}
+
+form{
+  width:100%;
+}
+
+input[type=text] {
+  width:90%;
+  padding:10px;
+  border:none;
+  background-color:#ececec;
+}
+input[type=submit] {
+  padding:10px;
+  border:none;
+  background-color:#FB3B49;
+  color:#ffffff;
+}
+
+
+
+.btn-login{
+  transition:0.3s;
+  padding:5px 30px;
+  border:1px solid #ececec;
+  font-size:14px;
+  text-decoration:none;
+  color:#313131;
+  background-color:#ffffff;
+}
+
+.btn-login:hover{
+  transition:0.3s;
+  padding:5px 30px;
+  border:1px solid #ececec;
+  font-size:14px;
+  text-decoration:none;
+  color:#313131;
+  background-color:rgba(8,53,98,0.4);
+}
 nav {
   width: 600px;
 }
@@ -38,16 +84,12 @@ nav a {
 
 .main-logo{
   height:30px;
+  margin-right:20px;
 }
 
 .search-icon{
   height:30px;
 }
-
-.search-form {
-  flex-basis:60%;
-}
-
 
 #hero{
   padding-top:30px;
@@ -142,17 +184,22 @@ h2{
 
 #features-container{
   display:flex;
-  justify-content:center;
-  align-content:center;
   flex-wrap:wrap;
+  justify-content:center;
   width:100%;
 }
 
+#features-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  width:70%;
+}
 .feature{
   display:flex;
   margin:0 1% 0 1%;
-  flex-basis:21%;
-  align-content:center;
+  flex-basis:23%;
+  align-content:flex-start;
   flex-wrap:wrap;
 }
 
